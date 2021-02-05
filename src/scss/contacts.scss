@@ -1,0 +1,102 @@
+.my-team {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: $highlighter;
+  text-align: center;
+}
+.contacts {
+  // height: 350px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  // margin-bottom: 1400px;
+  list-style-type: none;
+
+  .contacts__item {
+    // background-color: #f7f7f7;
+
+    width: 274px;
+    // height: 398px;
+    text-align: center;
+    margin-bottom: 40px;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: all 300ms linear;
+    }
+  }
+}
+
+.contacts__card {
+  margin-bottom: 20px;
+
+  .contacts__card__image {
+    width: 265px;
+    height: 360px;
+    margin-bottom: 10px;
+  }
+}
+
+.card__content {
+  text-align: center;
+
+  .card__name {
+    font-size: 20px;
+    margin-bottom: 2px;
+    color: $highlighter;
+  }
+
+  .card__description {
+    font-size: 14px;
+  }
+}
+
+.teacher {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+  height: auto;
+}
+
+.contacts__item__teacher {
+  margin: 0 auto;
+  text-align: center;
+  .img_teacher {
+    width: 360px;
+    height: 260px;
+  }
+  &:hover {
+    transform: scale(1.1);
+    transition: all 300ms linear;
+  }
+}
+
+.h2__teacher {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: rgb(53, 206, 22);
+}
+
+.teacher__name {
+  font-size: 25px;
+  color: $highlighter;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    // margin-bottom: 350px;
+  }
+}
+
+.img_teacher {
+  width: 450px;
+  height: 350px;
+}

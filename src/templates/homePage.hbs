@@ -1,0 +1,21 @@
+<ul class="main__list">
+  {{#each this}}
+  <li class="main__list__card">
+    <div class="main__list__img">
+      {{#if poster_path}}
+      <img data-id={{id}} class="main__list__img--poster" src="https://image.tmdb.org/t/p/original{{poster_path}}" alt="{{title}}" />
+      {{/if}}
+      <p class="title__film">{{title}} </p>
+      <div class="movie__box">
+        <p class="title__description">
+          {{#if genre_ids}}
+          <span class="title__description">{{genre_ids}}</span>
+          &nbsp;|&nbsp;
+          {{/if}}
+          <span class="title__description">{{release_date}}</span>
+        </p>        
+      </div>
+    </div>
+  </li>
+  {{/each }}
+</ul>
